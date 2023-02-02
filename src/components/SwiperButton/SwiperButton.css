@@ -1,0 +1,20 @@
+.swiper-button {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.swiper-button:hover {
+    cursor: pointer;
+}
+
+.swiper-button__prev {
+    left: calc(var(--swiper-button-padding) + var(--sidebar-width));
+}
+
+.swiper-button__next {
+    right: var(--swiper-button-padding);
+}
