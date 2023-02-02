@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root {
-    --bg-color: rgb(29, 29, 29);
+    --bg-color-rgb: 29, 29, 29;
+    --bg-color: rgb(var(--bg-color-rgb));
+    --overlay-color: rgba(var(--bg-color-rgb), 0.6);
+    --swiper-button-padding: 20px;
+    --sidebar-width: 55px;
+    --white-color: white;
+    --light-color: rgb(226, 219, 219);
+    --swiper-pagination-bullet-horizontal-gap: 7px;
 }
 
 *,
@@ -14,4 +21,9 @@
 body {
     font-family: roboto;
     background-color: var(--bg-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
 }
