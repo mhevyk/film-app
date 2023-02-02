@@ -1,0 +1,11 @@
+.main__nav {
+    position: absolute;
+    right: 0;
+    z-index: 30;
+    justify-content: end;
+    padding: 25px 30px;
+}
+
+.main__nav img {
+    padding: 0 30px;
+}
