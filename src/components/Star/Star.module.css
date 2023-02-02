@@ -1,0 +1,13 @@
+.star:hover {
+    cursor: pointer;
+}
+
+.filled {
+    width: 20px;
+    height: 20px;
+}
+
+.stroked {
+    width: 19.4px;
+    height: 19.4px;
+}
