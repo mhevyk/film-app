@@ -1,0 +1,8 @@
+.slide {
+    padding-left: var(--sidebar-width);
+    background-size: cover;
+    min-height: 648px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: var(--white-color);
+}
