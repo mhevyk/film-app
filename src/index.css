@@ -41,3 +41,19 @@ a {
     display: flex;
     align-items: center;
 }
+
+.container {
+    margin: 0 5px;
+}
+
+@media (min-width: 650px) {
+    .container {
+        margin: 0 var(--sidebar-width);
+    }
+}
+
+.background-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
