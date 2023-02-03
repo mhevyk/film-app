@@ -3,7 +3,7 @@
     min-width: 0;
 }
 
-.swiper-button__disabled {
+.swiper-container .swiper-button__disabled {
     display: none;
 }
 

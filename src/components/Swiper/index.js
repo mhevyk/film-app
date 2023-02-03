@@ -6,20 +6,29 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper as SwiperWrapper, SwiperSlide } from 'swiper/react';
 import SwiperButton from '../SwiperButton';
+import { createId } from '../../helpers';
+import { useMemo } from 'react';
 
-function Swiper({ slides, isPagination = false, SlideItem }) {
+function Swiper({
+  slides,
+  slidesPerView = 1,
+  isPagination = false,
+  SlideItem,
+}) {
   const modules = [Navigation, Pagination];
+  const id = useMemo(() => createId(), []);
 
   return (
-    <div className="swiper-container">
+    <div data-id={id} className="swiper-container">
       <SwiperButton variant="prev" />
       <SwiperButton variant="next" />
       <SwiperWrapper
         modules={modules}
-        spaceBetween={50}
+        spaceBetween={8}
+        slidesPerView={slidesPerView}
         navigation={{
-          nextEl: '.swiper-button__next',
-          prevEl: '.swiper-button__prev',
+          nextEl: `[data-id='${id}'] .swiper-button__next`,
+          prevEl: `[data-id='${id}'] .swiper-button__prev`,
           disabledClass: 'swiper-button__disabled',
         }}
         pagination={{
