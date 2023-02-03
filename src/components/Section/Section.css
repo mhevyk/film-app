@@ -1,0 +1,7 @@
+.section__title {
+    display: flex;
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 500;
+    margin: 24px 0;
+}
