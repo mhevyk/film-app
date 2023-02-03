@@ -3,7 +3,7 @@ import './SwiperButton.css';
 import swiperPrevIcon from '../../assets/chevron-left.png';
 import swiperNextIcon from '../../assets/chevron-right.png';
 
-function SwiperButton({ variant }) {
+function SwiperButton({ variant, isInline = false }) {
   let icon = null;
   switch (variant) {
     case 'next':
@@ -16,7 +16,7 @@ function SwiperButton({ variant }) {
   }
 
   return (
-    <div className={`swiper-button swiper-button__${variant}`}>
+    <div className={`swiper-button swiper-button__${variant} ${isInline ? 'inline' : ''}`}>
       <img src={icon} alt={variant} />
     </div>
   );
