@@ -1,7 +1,4 @@
 .slide {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     color: var(--white-color);
 }
 
@@ -35,16 +32,6 @@
 
 .header__slide .film__card .card__item {
     margin-bottom: 16px;
-}
-
-.header__slide .film__genre {
-    width: fit-content;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 4px 8px;
-    background-color: var(--overlay-color);
-    color: var(--badge-color);
-    border-radius: 0 8px;
 }
 
 .header__slide .film__name {
