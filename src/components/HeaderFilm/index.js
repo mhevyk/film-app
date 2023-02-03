@@ -17,9 +17,7 @@ function HeaderFilm({ data }) {
         <Stars count={5} className="card__item film__stars" />
         <h2 className="card__item film__name">{name}</h2>
         <p className="card__item film__description">{description}</p>
-        <Button variant="gradient-bordered">
-          <a href={`#watch-film-${name}`.replace(/\s/g, '-')}>Watch now</a>
-        </Button>
+        <Button variant="gradient-bordered">Watch now</Button>
       </article>
     </div>
   );

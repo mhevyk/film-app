@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import homeIcon from '../../assets/home.png';
 import movieIcon from '../../assets/movie.png';
 import televisionIcon from '../../assets/tv.png';
-import starIcon from '../../assets/star.png';
+import starIcon from '../../assets/star-stroke.png';
 
 function Sidebar() {
   return (

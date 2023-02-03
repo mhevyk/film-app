@@ -14,12 +14,10 @@
 }
 
 .gradient {
-    --gradient: linear-gradient(
-        to right,
-        var(--button-gradient-start-color),
-        var(--button-gradient-middle-color),
-        var(--button-gradient-end-color)
-    );
+    --gradient: linear-gradient(to right,
+            var(--button-gradient-start-color),
+            var(--button-gradient-middle-color),
+            var(--button-gradient-end-color));
     outline: none;
     border: none;
     z-index: 2;
