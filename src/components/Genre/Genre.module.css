@@ -1,0 +1,9 @@
+.badge {
+    width: fit-content;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 8px;
+    background-color: var(--overlay-color);
+    color: var(--badge-color);
+    border-radius: 0 8px;
+}
