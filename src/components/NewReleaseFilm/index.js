@@ -1,8 +1,8 @@
-import './NewReleasesFilm.css';
+import './NewReleaseFilm.css';
 import Stars from '../Stars';
 import Genre from '../Genre';
 
-function NewReleasesFilm({ data }) {
+function NewReleaseFilm({ data }) {
   const { name, image, genre } = data;
   return (
     <div
@@ -20,4 +20,4 @@ function NewReleasesFilm({ data }) {
   );
 }
 
-export default NewReleasesFilm;
+export default NewReleaseFilm;

@@ -1,11 +1,13 @@
+import FeatureTVShowSection from './components/FeatureTVShowSection';
 import Header from './components/Header';
-import NewReleasesSection from './components/NewReleasesSection';
+import NewReleaseSection from './components/NewReleaseSection';
 
 function App() {
   return (
     <>
       <Header />
-      <NewReleasesSection />
+      <NewReleaseSection />
+      <FeatureTVShowSection />
     </>
   );
 }

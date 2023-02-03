@@ -1,10 +1,10 @@
 import Swiper from '../Swiper';
-import NewReleasesFilm from '../NewReleasesFilm';
+import NewReleaseFilm from '../NewReleaseFilm';
 import Section from '../Section';
 import { slides } from './slides';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
-function NewReleasesSection() {
+function NewReleaseSection() {
   const { width } = useWindowDimensions();
   const slidesPerView = width < 500 ? 1 : Math.round(width / 300) + 0.4;
 
@@ -12,11 +12,11 @@ function NewReleasesSection() {
     <Section title="New Releases" className="section__new-releases">
       <Swiper
         slides={slides}
-        SlideItem={NewReleasesFilm}
+        SlideItem={NewReleaseFilm}
         slidesPerView={slidesPerView}
       />
     </Section>
   );
 }
 
-export default NewReleasesSection;
+export default NewReleaseSection;
