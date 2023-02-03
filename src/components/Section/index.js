@@ -3,10 +3,10 @@ import SwiperButton from '../SwiperButton';
 
 function Section({ title, children, className }) {
   return (
-    <section className={`section container ${className}`}>
+    <section className={`section ${className} container`}>
       <h5 className="section__title">
         {title}
-        <SwiperButton variant="next" isInline={true} />
+        <SwiperButton variant="next" />
       </h5>
       {children}
     </section>
