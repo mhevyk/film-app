@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Star from '../Star';
 
-function Stars({ count }) {
+function Stars({ count, ...otherProps }) {
   const [rating, setRating] = useState(0);
 
   const clickHandler = (event) => {
@@ -10,7 +10,7 @@ function Stars({ count }) {
   };
 
   return (
-    <div>
+    <div {...otherProps}>
       {[...Array(count).keys()].map((index) => (
         <Star
           key={index}

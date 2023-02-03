@@ -9,9 +9,9 @@ import { slides } from './slides';
 function Header() {
   return (
     <header className="header">
+      <Sidebar />
       <Navbar />
       <Swiper slides={slides} isPagination={true} SlideItem={HeaderFilm} />
-      <Sidebar />
     </header>
   );
 }

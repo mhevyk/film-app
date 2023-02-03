@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-:root {
+:root,
+::before,
+::after {
     --bg-color-rgb: 29, 29, 29;
     --bg-color: rgb(var(--bg-color-rgb));
     --overlay-color: rgba(var(--bg-color-rgb), 0.6);
@@ -9,6 +11,12 @@
     --white-color: white;
     --light-color: rgb(226, 219, 219);
     --swiper-pagination-bullet-horizontal-gap: 7px;
+    --badge-color: #0FEFFD;
+    --button-border-width: 1px;
+    --button-border-radius: 60px;
+    --button-gradient-start-color: #0FEFFD;
+    --button-gradient-middle-color: #FF00F5;
+    --button-gradient-end-color: #0FEFFD38;
 }
 
 *,
@@ -16,11 +24,17 @@
 ::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: roboto;
     background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .nav {

@@ -4,7 +4,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 20;
+    z-index: 30;
 }
 
 .swiper-button:hover {
@@ -12,8 +12,15 @@
 }
 
 .swiper-button__prev {
-    left: calc(var(--swiper-button-padding) + var(--sidebar-width));
+    left: var(--swiper-button-padding);
 }
+
+@media (min-width: 850px) {
+    .swiper-button__prev {
+        left: calc(var(--swiper-button-padding) + var(--sidebar-width));
+    }
+}
+
 
 .swiper-button__next {
     right: var(--swiper-button-padding);

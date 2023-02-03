@@ -10,10 +10,6 @@ import SwiperButton from '../SwiperButton';
 function Swiper({ slides, isPagination = false, SlideItem }) {
   const modules = [Navigation, Pagination];
 
-  const slideChangeHandler = () => {
-    console.log('slide change');
-  };
-
   return (
     <div className="swiper-container">
       <SwiperButton variant="prev" />
@@ -21,7 +17,6 @@ function Swiper({ slides, isPagination = false, SlideItem }) {
       <SwiperWrapper
         modules={modules}
         spaceBetween={50}
-        onSlideChange={slideChangeHandler}
         navigation={{
           nextEl: '.swiper-button__next',
           prevEl: '.swiper-button__prev',
