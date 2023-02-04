@@ -1,13 +1,14 @@
-import FeatureTVShowSection from './components/FeatureTVShowSection';
+import './App.css';
 import Header from './components/Header';
-import NewReleaseSection from './components/NewReleaseSection';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Header />
-      <NewReleaseSection />
-      <FeatureTVShowSection />
+      <Main />
+      <Footer />
     </>
   );
 }
