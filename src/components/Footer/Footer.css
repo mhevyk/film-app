@@ -1,0 +1,16 @@
+.footer {
+    margin: 20px 0;
+    color: var(--white-color);
+    text-align: right;
+    font-size: 12px;
+}
+
+.footer a {
+    color: var(--badge-color);
+    opacity: 1;
+    transition: 400ms;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+}
