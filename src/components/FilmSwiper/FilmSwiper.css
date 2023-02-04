@@ -3,7 +3,7 @@
     min-width: 0;
 }
 
-.swiper-container .swiper-button__disabled {
+.swiper-container>.chevron-arrow__disabled {
     display: none;
 }
 
@@ -11,6 +11,6 @@
     background-color: var(--light-color);
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--white-color);
 }

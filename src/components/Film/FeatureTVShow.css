@@ -1,0 +1,9 @@
+.section__featured-tv-shows .film__card {
+    height: 600px;
+}
+
+@media (min-width: 1100px) {
+    .section__featured-tv-shows .film__card {
+        height: 736px;
+    }
+} 

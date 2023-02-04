@@ -2,8 +2,7 @@ import './Header.css';
 
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
-import Swiper from '../Swiper';
-import HeaderFilm from '../HeaderFilm';
+import FilmSwiper from '../FilmSwiper';
 import { slides } from './slides';
 
 function Header() {
@@ -11,7 +10,7 @@ function Header() {
     <header className="header">
       <Sidebar />
       <Navbar />
-      <Swiper slides={slides} isPagination={true} SlideItem={HeaderFilm} />
+      <FilmSwiper slides={slides} isPagination={true} />
     </header>
   );
 }

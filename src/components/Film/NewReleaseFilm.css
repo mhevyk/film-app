@@ -1,0 +1,31 @@
+.section__new-releases .film__card {
+    height: 600px;
+}
+
+@media (min-width: 500px) {
+    .section__new-releases .film__card {
+        height: 400px;
+    }
+}
+
+.section__new-releases .film__card,
+.section__featured-tv-shows .film__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white-color);
+    padding: 0 24px 24px;
+    
+}
+
+.section__new-releases .film__card .card__item,
+.section__featured-tv-shows .film__card .card__item {
+    margin-bottom: 4%;
+}
+
+.section__new-releases .film__card .film__name,
+.section__featured-tv-shows .film__card .film__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}

@@ -1,12 +1,12 @@
 import './Section.css';
-import SwiperButton from '../SwiperButton';
+import ChevronArrow from '../ChevronArrow';
 
 function Section({ title, children, className }) {
   return (
-    <section className={`section ${className} container`}>
+    <section className={`section ${className}`}>
       <h5 className="section__title">
         {title}
-        <SwiperButton variant="next" />
+        <ChevronArrow direction="right" />
       </h5>
       {children}
     </section>
