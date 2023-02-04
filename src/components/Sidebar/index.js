@@ -11,19 +11,19 @@ function Sidebar() {
     <aside className="header__sidebar">
       <nav className="nav sidebar__nav">
         <a href="/" className="link nav__link">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" loading="lazy" />
         </a>
         <a href="/" className="link nav__link">
-          <img src={homeIcon} alt="Home" />
+          <img src={homeIcon} alt="Home" loading="lazy" />
         </a>
         <a href="#movie" className="link nav__link">
-          <img src={movieIcon} alt="Movie" />
+          <img src={movieIcon} alt="Movie" loading="lazy" />
         </a>
         <a href="#television" className="link nav__link">
-          <img src={televisionIcon} alt="Television" />
+          <img src={televisionIcon} alt="Television" loading="lazy" />
         </a>
         <a href="#star" className="link nav__link">
-          <img src={starIcon} alt="Star" />
+          <img src={starIcon} alt="Star" loading="lazy" />
         </a>
       </nav>
     </aside>
