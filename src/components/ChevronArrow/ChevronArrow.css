@@ -1,12 +1,19 @@
 .chevron-arrow {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chevron-arrow:hover {
+    scale: 1;
 }
 
 .swiper-container>.chevron-arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    translate: 0 -50%;
     z-index: 30;
 }
 

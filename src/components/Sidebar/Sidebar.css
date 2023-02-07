@@ -6,7 +6,7 @@
 
 @media (min-width: 850px) {
     .header__sidebar {
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         height: 100%;
@@ -33,15 +33,9 @@
     text-align: center;
 }
 
-.header__sidebar .sidebar__nav .nav__link img {
+.header__sidebar .sidebar__nav .action-icon img {
     width: 30px;
     height: 30px;
     padding: 7px;
     margin-bottom: -4px;
-}
-
-.header__sidebar .sidebar__nav .nav__link:hover {
-    transform: scale(1.105);
-    background-color: rgba(var(--light-color-rgb), 0.1);
-    border-radius: 50%;
 }

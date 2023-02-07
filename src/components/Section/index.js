@@ -6,7 +6,7 @@ function Section({ title, children, className }) {
     <section className={`section ${className}`}>
       <h5 className="section__title">
         {title}
-        <ChevronArrow direction="right" />
+        <ChevronArrow direction="right" isActionIcon={false} />
       </h5>
       {children}
     </section>

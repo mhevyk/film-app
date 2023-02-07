@@ -13,6 +13,11 @@
     }
 }
 
-.header__nav img {
-    padding: 0 30px;
+.header__nav a {
+    margin: 0 23px;
+}
+
+.header__nav a img {
+    padding: 7px;
+    margin-bottom: -4px;
 }

@@ -3,7 +3,7 @@ import './ChevronArrow.css';
 import chevronLeftIcon from '../../assets/chevron-left.png';
 import chevronRightIcon from '../../assets/chevron-right.png';
 
-function ChevronArrow({ direction }) {
+function ChevronArrow({ direction, isActionIcon = true }) {
   let icon = null;
   switch (direction) {
     case 'right':
@@ -16,7 +16,7 @@ function ChevronArrow({ direction }) {
   }
 
   return (
-    <div className={`chevron-arrow chevron-arrow__${direction}`}>
+    <div className={`chevron-arrow chevron-arrow__${direction} ${isActionIcon ? 'action-icon' : ''}`}>
       <img src={icon} alt={direction} />
     </div>
   );

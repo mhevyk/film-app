@@ -13,16 +13,16 @@ function Sidebar() {
         <a href="/" className="link">
           <img src={logo} alt="Logo" loading="lazy" />
         </a>
-        <a href="/" className="link nav__link">
+        <a href="/" className="link action-icon">
           <img src={homeIcon} alt="Home" loading="lazy" />
         </a>
-        <a href="#movie" className="link nav__link">
+        <a href="#movie" className="link action-icon">
           <img src={movieIcon} alt="Movie" loading="lazy" />
         </a>
-        <a href="#television" className="link nav__link">
+        <a href="#television" className="link action-icon">
           <img src={televisionIcon} alt="Television" loading="lazy" />
         </a>
-        <a href="#star" className="link nav__link">
+        <a href="#star" className="link action-icon">
           <img src={starIcon} alt="Star" loading="lazy" />
         </a>
       </nav>
