@@ -27,3 +27,21 @@
         height: 85%;
     }
 }
+
+.header__sidebar .sidebar__nav .nav__link {
+    transform: scale(1);
+    text-align: center;
+}
+
+.header__sidebar .sidebar__nav .nav__link img {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    margin-bottom: -4px;
+}
+
+.header__sidebar .sidebar__nav .nav__link:hover {
+    transform: scale(1.105);
+    background-color: rgba(var(--light-color-rgb), 0.1);
+    border-radius: 50%;
+}

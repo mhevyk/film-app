@@ -9,7 +9,8 @@
     --swiper-button-padding: 20px;
     --sidebar-width: 55px;
     --white-color: white;
-    --light-color: rgb(226, 219, 219);
+    --light-color-rgb: 226, 219, 219;
+    --light-color: rgb(var(--light-color-rgb));
     --swiper-pagination-bullet-horizontal-gap: 7px;
     --badge-color: #0FEFFD;
     --button-border-width: 1px;
