@@ -2,15 +2,15 @@ import './Header.css';
 
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
-import FilmSwiper from '../FilmSwiper';
 import { slides } from './slides';
+import FadeSwiper from '../FadeSwiper';
 
 function Header() {
   return (
     <header className="header">
       <Sidebar />
       <Navbar />
-      <FilmSwiper slides={slides} isPagination={true} />
+      <FadeSwiper slides={slides} isAutoplay={true} />
     </header>
   );
 }

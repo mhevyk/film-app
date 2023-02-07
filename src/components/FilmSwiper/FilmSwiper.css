@@ -3,6 +3,10 @@
     min-width: 0;
 }
 
+.swiper-wrapper {
+    justify-content: space-between;
+}
+
 .swiper-container>.chevron-arrow__disabled {
     display: none;
 }
