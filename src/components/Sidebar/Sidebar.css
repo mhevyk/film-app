@@ -39,3 +39,10 @@
     padding: 7px;
     margin-bottom: -4px;
 }
+
+@media (min-width: 1600px) {
+    .logo img {
+        min-width: 4vw;
+        min-height: 4vw;
+    }
+}

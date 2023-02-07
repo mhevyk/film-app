@@ -7,3 +7,9 @@
         height: 736px;
     }
 } 
+
+@media (min-width: 1600px) {
+    .section__featured-tv-shows .film__card {
+        height: 70vh;
+    }
+}

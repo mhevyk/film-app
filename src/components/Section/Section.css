@@ -6,3 +6,10 @@
     font-weight: 500;
     margin: 24px 0;
 }
+
+@media (min-width: 1600px) {
+    .section__title {
+        font-size: 1.3vw;
+        margin: 3vh 0;
+    }
+}

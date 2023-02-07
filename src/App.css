@@ -28,3 +28,15 @@
     background-color: rgba(var(--light-color-rgb), 0.1);
     border-radius: 50%;
 }
+
+@media (min-width: 1600px) {
+    :root {
+        --sidebar-width: 4vw;
+        --swiper-button-padding: 3vw;
+    }
+
+    .action-icon img {
+        min-width: 2vw;
+        min-height: 2vw;
+    }
+}

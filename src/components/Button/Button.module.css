@@ -9,6 +9,14 @@
     text-shadow: 0px 40px 40px rgba(0, 0, 0, 0.12);
 }
 
+@media (min-width: 1600px) {
+    .button {
+        max-width: 20%;
+        font-size: 1vw;
+        padding: 1vw;
+    }
+}
+
 .button:hover {
     cursor: pointer;
 }

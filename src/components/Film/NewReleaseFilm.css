@@ -14,18 +14,23 @@
     flex-direction: column;
     justify-content: flex-end;
     color: var(--white-color);
-    padding: 0 24px 24px;
+    padding: 0 5% 5%;
     
 }
 
 .section__new-releases .film__card .card__item,
 .section__featured-tv-shows .film__card .card__item {
-    margin-bottom: 4%;
+    margin-bottom: 4.5%;
 }
 
 .section__new-releases .film__card .film__name,
 .section__featured-tv-shows .film__card .film__name {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: max(16px, 1.5vw);
+}
+
+@media (min-width: 1600px) {
+    .section__new-releases .film__card {
+        height: 40vh;
+    }
 }

@@ -36,8 +36,7 @@
 }
 
 .header .slide .film__name {
-    font-size: min(56px, 12vw);
-    line-height: min(64px, 15vw);
+    font-size: 6vw;
     font-weight: 500;
 }
 
@@ -60,6 +59,22 @@
 
 @media (min-width: 850px) {
     .header .slide .film__description {
-        max-width: 632px;
+        max-width: 78%;
+        max-height: none;
+    }
+}
+
+@media (min-width: 1600px) {
+    .header .slide {
+        min-height: 80vh;
+    }
+
+    .header .slide .film__card .card__item {
+        margin-bottom: 2.2vh;
+    }
+
+    .header .slide .film__description {
+        font-size: 1.5vw;
+        line-height: 4vh;
     }
 }

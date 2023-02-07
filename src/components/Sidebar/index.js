@@ -10,7 +10,7 @@ function Sidebar() {
   return (
     <aside className="header__sidebar">
       <nav className="nav sidebar__nav">
-        <a href="/" className="link">
+        <a href="/" className="logo link">
           <img src={logo} alt="Logo" loading="lazy" />
         </a>
         <a href="/" className="link action-icon">
