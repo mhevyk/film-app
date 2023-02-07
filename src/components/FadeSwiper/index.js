@@ -9,6 +9,8 @@ function FadeSwiper({ slides, ...otherProps }) {
       speed={1000}
       slidesPerView={1}
       isPagination={true}
+      noSwiping={true}
+      noSwipingClass="swiper-slide"
       {...otherProps}
     />
   );
