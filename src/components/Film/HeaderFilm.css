@@ -21,13 +21,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 80%;
     padding: var(--sidebar-width);
 }
 
 @media (min-width: 850px) {
     .header .slide .film__card {
         padding: 0;
-        padding-left: calc(var(--sidebar-width) + 15vw);
+        padding-left: calc(var(--sidebar-width) + 10vw);
     }
 }
 
@@ -59,7 +60,6 @@
 
 @media (min-width: 850px) {
     .header .slide .film__description {
-        max-width: 78%;
         max-height: none;
     }
 }
