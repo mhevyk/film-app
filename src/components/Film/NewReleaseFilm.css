@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: flex-end;
     color: var(--white-color);
-    padding: 0 5% 5%;
+    padding: 0 8% 8%;
     
 }
 
@@ -31,6 +31,6 @@
 
 @media (min-width: 1600px) {
     .section__new-releases .film__card {
-        height: 40vh;
+        height: 50vh;
     }
 }

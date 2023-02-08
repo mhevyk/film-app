@@ -1,0 +1,32 @@
+.film__watch-now {
+    opacity: 0;
+    height: 0;
+    transition: 500ms;
+}
+
+.film__watch-now.section__title {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.section .slide:hover .film__watch-now {
+    opacity: 1;
+    height: 25px;
+
+}
+
+.section .slide:hover {
+    cursor: default;
+}
+
+.zoom-background {
+    background-size: 100% 100%;
+    transition: background-size 400ms ease-in-out;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.zoom-background:hover {
+    background-size: 110% 110%;
+}

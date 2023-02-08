@@ -1,13 +1,9 @@
-import './Section.css';
-import ChevronArrow from '../ChevronArrow';
+import HeadingWithCaret from '../HeadingWithCaret';
 
 function Section({ title, children, className }) {
   return (
     <section className={`section ${className}`}>
-      <h5 className="section__title">
-        {title}
-        <ChevronArrow direction="right" isActionIcon={false} />
-      </h5>
+      <HeadingWithCaret text={title} />
       {children}
     </section>
   );

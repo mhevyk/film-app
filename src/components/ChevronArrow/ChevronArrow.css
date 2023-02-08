@@ -1,6 +1,4 @@
 .chevron-arrow {
-    width: 35px;
-    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +19,7 @@
     cursor: pointer;
 }
 
-.header .swiper-container>.chevron-arrow__left {
+.swiper-container>.chevron-arrow__left {
     left: var(--swiper-button-padding);
 }
 

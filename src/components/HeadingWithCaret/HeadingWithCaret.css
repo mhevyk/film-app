@@ -2,13 +2,25 @@
     display: flex;
     align-items: center;
     font-size: 18px;
+}
+
+.film__card>.section__title {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    height: 0;
+    opacity: 0;
+    transition: all 700ms;
+}
+
+.section>.section__title {
     color: var(--white-color);
     font-weight: 500;
     margin: 24px 0;
 }
 
 @media (min-width: 1600px) {
-    .section__title {
+    .section>.section__title {
         font-size: 1.3vw;
         margin: 3vh 0;
     }
