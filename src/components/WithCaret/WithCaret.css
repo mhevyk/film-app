@@ -1,0 +1,19 @@
+.section>.with-caret-container {
+    margin: 24px 0;
+}
+
+.section .with-caret-container>.section__title {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.section>.with-caret-container>.section__title {
+    padding-left: calc(var(--sidebar-width) * 0.7);
+}
+
+.with-caret-container {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    letter-spacing: 0.7px;
+}

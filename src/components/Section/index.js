@@ -1,9 +1,11 @@
-import HeadingWithCaret from '../HeadingWithCaret';
+import WithCaretAfter from '../WithCaret';
 
 function Section({ title, children, className }) {
   return (
     <section className={`section ${className}`}>
-      <HeadingWithCaret text={title} />
+      <WithCaretAfter>
+        <h5 className={`section__title`}>{title}</h5>
+      </WithCaretAfter>
       {children}
     </section>
   );

@@ -16,7 +16,11 @@ function ChevronArrow({ direction, isActionIcon = true }) {
   }
 
   return (
-    <span className={`chevron-arrow chevron-arrow__${direction} ${isActionIcon ? 'action-icon' : ''}`}>
+    <span
+      className={`chevron-arrow chevron-arrow__${direction} ${
+        isActionIcon ? 'action-icon' : ''
+      }`}
+    >
       <img src={icon} alt={direction} />
     </span>
   );

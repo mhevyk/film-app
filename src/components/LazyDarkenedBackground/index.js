@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
-import placeholderImage from '../../assets/placeholder.png';
 
-function LazyDarkenedBackground({ src, children, className }) {
-  const [source, setSource] = useState(placeholderImage);
-  const darkLayer =
-    'linear-gradient(var(--overlay-color), var(--overlay-color))';
+function LazyDarkenedBackground({
+  src,
+  children,
+  className,
+  afterLoadedClassName,
+}) {
+  const placeholderImageSource = 'assets/placeholder.jpg';
+  const [source, setSource] = useState(placeholderImageSource);
 
   useEffect(() => {
     const img = new Image();
@@ -12,11 +15,19 @@ function LazyDarkenedBackground({ src, children, className }) {
     img.onload = () => setSource(src);
   }, [src]);
 
+  const wrapWithDarkLayer = (source) => {
+    return `linear-gradient(var(--overlay-color), var(--overlay-color)), url(${source})`;
+  };
+
   return (
     <div
-      className={className}
+      className={`${className} ${
+        source === placeholderImageSource
+          ? 'background-cover'
+          : afterLoadedClassName
+      }`}
       style={{
-        backgroundImage: `${darkLayer}, url(${source})`,
+        backgroundImage: wrapWithDarkLayer(source),
       }}
     >
       {children}

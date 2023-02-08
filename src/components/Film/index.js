@@ -6,15 +6,14 @@ import Stars from '../Stars';
 import Button from '../Button';
 import Genre from '../Genre';
 import LazyDarkenedBackground from '../LazyDarkenedBackground';
-import HeadingWithCaret from '../HeadingWithCaret';
+import WithCaret from '../WithCaret';
 
 function Film({ image, genre, name, description = null, watchButton = null }) {
   return (
     <LazyDarkenedBackground
       src={image}
-      className={`slide ${
-        watchButton ? 'background-cover' : 'zoom-background'
-      }`}
+      className="slide"
+      afterLoadedClassName={watchButton ? 'background-cover' : 'zoom-background'}
     >
       <article className="film__card">
         <Genre text={genre} className="card__item" />
@@ -26,12 +25,11 @@ function Film({ image, genre, name, description = null, watchButton = null }) {
         {watchButton ? (
           <Button variant="gradient-bordered">Watch now</Button>
         ) : (
-          <HeadingWithCaret
-            text="Watch now"
-            className="card__item film__watch-now"
-            as="link"
-            href="#watch-now"
-          />
+          <WithCaret className="card__item film__watch-now">
+            <a href="#watch-now" className="section__title">
+              Watch now
+            </a>
+          </WithCaret>
         )}
       </article>
     </LazyDarkenedBackground>
