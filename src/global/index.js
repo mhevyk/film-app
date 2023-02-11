@@ -1,0 +1,1 @@
+export const publicPath = 'film-app-layout/';
