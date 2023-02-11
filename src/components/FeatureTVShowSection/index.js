@@ -4,7 +4,7 @@ import { slides } from './slides';
 import { useSlidesPerView } from '../../hooks/useSlidesPerView';
 
 function FeatureTVShowSection() {
-  const slidesPerView = useSlidesPerView(500, 3.4);
+  const slidesPerView = useSlidesPerView(500);
 
   return (
     <Section title="Featured TV shows" className="section__featured-tv-shows">

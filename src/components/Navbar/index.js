@@ -1,6 +1,6 @@
 import './Navbar.css';
-import profileIcon from '../../assets/profile.png';
-import settingsIcon from '../../assets/settings.png';
+import profileIcon from '../../assets/profile.svg';
+import settingsIcon from '../../assets/settings.svg';
 
 function Navbar() {
   return (

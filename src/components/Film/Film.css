@@ -4,6 +4,14 @@
     transition: 400ms;
 }
 
+.section .slide {
+    aspect-ratio: 2 / 3;
+}
+
+.section .film__card {
+    height: 100%;
+}
+
 .film__card>.film__watch-now.section__title {
     font-size: 13px;
     letter-spacing: 0.7px;

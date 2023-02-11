@@ -1,13 +1,3 @@
-.section__new-releases .film__card {
-    height: 600px;
-}
-
-@media (min-width: 500px) {
-    .section__new-releases .film__card {
-        height: 400px;
-    }
-}
-
 .section__new-releases .film__card,
 .section__featured-tv-shows .film__card {
     display: flex;
@@ -27,10 +17,4 @@
 .section__featured-tv-shows .film__card .film__name {
     font-weight: 500;
     font-size: max(20px, 1.5vw);
-}
-
-@media (min-width: 1600px) {
-    .section__new-releases .film__card {
-        height: 50vh;
-    }
 }

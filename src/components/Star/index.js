@@ -1,7 +1,7 @@
 import styles from './Star.module.css';
 
-import starFill from '../../assets/star-fill.png';
-import starStroke from '../../assets/star-stroke.png';
+import starFill from '../../assets/star-fill.svg';
+import starStroke from '../../assets/star-stroke.svg';
 
 function Star({ value, isFilled, onClick }) {
   return (

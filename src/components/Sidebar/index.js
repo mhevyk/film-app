@@ -1,10 +1,10 @@
 import './Sidebar.css';
 
-import logo from '../../assets/logo.png';
-import homeIcon from '../../assets/home.png';
-import movieIcon from '../../assets/movie.png';
-import televisionIcon from '../../assets/tv.png';
-import starIcon from '../../assets/star-stroke.png';
+import logo from '../../assets/logo.svg';
+import homeIcon from '../../assets/home.svg';
+import movieIcon from '../../assets/movie.svg';
+import televisionIcon from '../../assets/tv.svg';
+import starIcon from '../../assets/star-stroke.svg';
 
 function Sidebar() {
   return (

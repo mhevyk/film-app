@@ -1,7 +1,7 @@
 import './ChevronArrow.css';
 
-import chevronLeftIcon from '../../assets/chevron-left.png';
-import chevronRightIcon from '../../assets/chevron-right.png';
+import chevronLeftIcon from '../../assets/chevron-left.svg';
+import chevronRightIcon from '../../assets/chevron-right.svg';
 
 function ChevronArrow({ direction, isActionIcon = true }) {
   let icon = null;
