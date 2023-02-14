@@ -4,7 +4,10 @@ import { slides } from './slides';
 import { useSlidesPerView } from '../../hooks/useSlidesPerView';
 
 function NewReleaseSection() {
-  const slidesPerView = useSlidesPerView(400);
+  const slidesPerView = useSlidesPerView({
+    breakpointPeriod: 300,
+    lastSlideVisiblePercent: 35,
+  });
 
   return (
     <Section title="New Releases" className="section__new-releases">

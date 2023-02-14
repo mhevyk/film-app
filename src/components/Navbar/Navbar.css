@@ -4,17 +4,27 @@
     right: 0;
     z-index: 30;
     justify-content: end;
-    padding: 2vw 2.2vw;
+    padding: 5vw;
+}
+
+.header__nav a {
+    margin: 0 5vw;
+}
+
+@media (min-width: 425px) {
+    .header__nav {
+        padding: 30px 50px;
+    }
+
+    .header__nav a {
+        margin: 0 20px;
+    }
 }
 
 @media (min-width: 850px) {
     .header__nav {
         top: 0;
     }
-}
-
-.header__nav a {
-    margin: 0 1.8vw;
 }
 
 .header__nav a img {

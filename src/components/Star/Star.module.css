@@ -3,13 +3,6 @@
     height: 16px;
 }
 
-@media (min-width: 1600px) {
-    .star {
-        width: 2vw;
-        height: 2vw;
-    }
-}
-
 .star:hover {
     cursor: pointer;
 }

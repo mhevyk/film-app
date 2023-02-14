@@ -13,7 +13,9 @@ function Film({ image, genre, name, description = null, watchButton = null }) {
     <LazyDarkenedBackground
       src={image}
       className="slide"
-      afterLoadedClassName={watchButton ? 'background-cover' : 'zoom-background'}
+      afterLoadedClassName={
+        watchButton ? 'background-cover' : 'zoom-background'
+      }
     >
       <article className="film__card">
         <Genre text={genre} className="card__item" />

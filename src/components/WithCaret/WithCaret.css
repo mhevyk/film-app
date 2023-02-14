@@ -7,8 +7,10 @@
     font-size: 15px;
 }
 
-.section>.with-caret-container>.section__title {
-    padding-left: calc(var(--sidebar-width) * 0.7);
+@media (min-width: 850px) {
+    .section>.with-caret-container>.section__title {
+        padding-left: calc(var(--sidebar-width) * 0.7);
+    }
 }
 
 .with-caret-container {

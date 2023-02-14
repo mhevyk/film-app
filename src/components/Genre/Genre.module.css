@@ -8,14 +8,6 @@
     border-radius: 0 8px;
 }
 
-@media (min-width: 1600px) {
-    .badge {
-        font-size: 1vw;
-        padding: 1.2vh 1.15vw;
-        border-radius: 0 0.8vw;
-    }
-}
-
 .badge:hover {
     text-decoration: underline;
     cursor: default;

@@ -7,8 +7,7 @@ import 'swiper/css/autoplay';
 
 import ChevronArrow from '../ChevronArrow';
 import Film from '../Film';
-import { useMemo } from 'react';
-import { createId } from '../../helpers';
+import { useId } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
   Navigation,
@@ -24,16 +23,17 @@ function FilmSwiper({
   slidesPerView = 1,
   isPagination = false,
   isAutoplay = false,
+  spaceBetween = 15,
   ...otherProps
 }) {
-  const id = useMemo(() => createId(), []);
+  const id = useId();
 
   return (
     <div data-id={id} className="swiper-container">
       <ChevronArrow direction="left" />
       <ChevronArrow direction="right" />
       <Swiper
-        spaceBetween={8}
+        spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
         navigation={{
           nextEl: `[data-id='${id}'] .chevron-arrow__right`,
@@ -52,6 +52,7 @@ function FilmSwiper({
             clickable: false,
           }
         }
+        className={slidesPerView > 1 ? 'blurred' : ''}
         {...otherProps}
       >
         {slides.map((slide) => (

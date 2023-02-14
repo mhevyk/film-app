@@ -1,8 +1,15 @@
 .footer {
     margin: 20px 0;
     color: var(--white-color);
-    text-align: right;
+    text-align: center;
     font-size: 12px;
+}
+
+@media (min-width: 425px) {
+    .footer {
+        text-align: right;
+        margin-right: 2vw;
+    }
 }
 
 .footer a {

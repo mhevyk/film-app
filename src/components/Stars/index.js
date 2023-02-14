@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Star from '../Star';
 
-function Stars({ count, ...otherProps }) {
-  const [rating, setRating] = useState(0);
+function Stars({ count, initialRating = 0, ...otherProps }) {
+  const [rating, setRating] = useState(initialRating);
 
   const clickHandler = (event) => {
     const value = Number(event.target.dataset.value);

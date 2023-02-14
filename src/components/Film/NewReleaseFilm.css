@@ -16,5 +16,4 @@
 .section__new-releases .film__card .film__name,
 .section__featured-tv-shows .film__card .film__name {
     font-weight: 500;
-    font-size: max(20px, 1.5vw);
 }

@@ -1,17 +1,19 @@
-import useWindowDimensions from "./useWindowDimensions";
+import useWindowDimensions from './useWindowDimensions';
 
-export function useSlidesPerView(occurencyCoefitient, maxSlides = Infinity) {
-    const { width } = useWindowDimensions();
-    let slidesToShow = 1;
-    if (width < 450) {
-        return slidesToShow;
-    }
-
-    slidesToShow = Math.floor(width / occurencyCoefitient) + 0.4;
-
-    if (slidesToShow > maxSlides) {
-        return maxSlides;
-    }
-
+export function useSlidesPerView({
+  oneSlideBreakpoint = 450,
+  breakpointPeriod,
+  lastSlideVisiblePercent = 40,
+}) {
+  const { width } = useWindowDimensions();
+  let slidesToShow = 1;
+  
+  if (width < oneSlideBreakpoint) {
     return slidesToShow;
+  }
+
+  slidesToShow =
+    Math.floor(width / breakpointPeriod) + lastSlideVisiblePercent / 100;
+
+  return slidesToShow;
 }
