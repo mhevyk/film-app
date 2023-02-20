@@ -1,6 +1,6 @@
 import useWindowDimensions from './useWindowDimensions';
 
-export function useSlidesPerView({
+export default function useSlidesPerView({
   oneSlideBreakpoint = 450,
   breakpointPeriod,
   lastSlideVisiblePercent = 40,
