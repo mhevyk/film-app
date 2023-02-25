@@ -11,7 +11,7 @@ export const FILM_API_NEW_RELEASES_URL = `${FILM_API_BASE_URL}/movie/now_playing
 export const FILM_API_POPULAR_TV_SHOWS_URL = `${FILM_API_BASE_URL}/tv/popular${PARAMS}`;
 export const FILM_API_GENRES_FILM_URL = `${FILM_API_BASE_URL}/genre/movie/list${PARAMS}`;
 export const FILM_API_GENRES_TV_URL = `${FILM_API_BASE_URL}/genre/tv/list${PARAMS}`;
-export const FILM_API_IMAGE_FULL_HD_URL = `${FILM_API_IMAGE_BASE_URL}/w1920_and_h800_multi_faces_filter(dark)`;
+export const FILM_API_IMAGE_FULL_HD_URL = `${FILM_API_IMAGE_BASE_URL}/w1066_and_h600_bestv2`;
 export const FILM_API_IMAGE_ORIGINAL_URL = `${FILM_API_IMAGE_BASE_URL}/original`;
 
 export const GET_FILM_BY_ID = (id) => `${FILM_API_BASE_URL}/movie/${id}${PARAMS}`;
