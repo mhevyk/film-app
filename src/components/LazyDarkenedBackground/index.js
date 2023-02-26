@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import { isDevelopmentMode, publicPath } from '../../global';
-
-const path = isDevelopmentMode ? publicPath : '';
+import placeholderImageSource from '../../assets/placeholder.jpg';
 
 function LazyDarkenedBackground({
   src,
@@ -9,18 +7,16 @@ function LazyDarkenedBackground({
   className,
   afterLoadedClassName,
 }) {
-  const placeholderImageSource = `${path}assets/placeholder.jpg`;
   const [source, setSource] = useState(placeholderImageSource);
 
   useEffect(() => {
     const img = new Image();
-    const publicImageSource = `${path}${src}`;
-    img.src = publicImageSource;
-    img.onload = () => setSource(publicImageSource);
+    img.src = src;
+    img.onload = () => setSource(src);
   }, [src]);
 
   const wrapWithDarkLayer = (source) => {
-    return `linear-gradient(var(--overlay-color), var(--overlay-color)), url(${source})`;
+    return `linear-gradient(var(--overlay-color), var(--overlay-color)), url("${source}")`;
   };
 
   return (
