@@ -1,18 +1,9 @@
 import './Navbar.css';
-import profileIcon from '../../assets/profile.svg';
-import settingsIcon from '../../assets/settings.svg';
+import navbarItems from './navbarItems';
+import NavbarMenu from '../NavbarMenu';
 
 function Navbar() {
-  return (
-    <nav className="nav header__nav">
-      <a href="#profile" className="action-icon">
-        <img src={profileIcon} alt="Profile" loading="lazy" />
-      </a>
-      <a href="#settings" className="action-icon">
-        <img src={settingsIcon} alt="Settings" loading="lazy" />
-      </a>
-    </nav>
-  );
+  return <NavbarMenu items={navbarItems} className="nav header__nav" />;
 }
 
 export default Navbar;
