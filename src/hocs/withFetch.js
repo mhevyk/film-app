@@ -6,7 +6,7 @@ export default function withFetch(WrappedComponent) {
   return ({ fetchMethod, ...props }) => {
     const [response, setResponse] = useState(null);
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
       setLoading(true);
