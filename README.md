@@ -10,7 +10,7 @@
 
 ## Demo
 
-Here is a working live demo: https://mhevyk.github.io/film-app-layout/
+Here is a working live demo: https://mhevyk.github.io/film-app/
 
 <p align="right">
 <a href='#quiz-game'>Back To The Top</a>

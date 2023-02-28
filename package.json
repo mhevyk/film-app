@@ -1,8 +1,7 @@
 {
-  "name": "film-app-layout",
+  "name": "film-app",
   "version": "0.1.0",
-  "homepage": "https://mhevyk.github.io/film-app-layout",
-  "private": true,
+  "homepage": "https://mhevyk.github.io/film-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
