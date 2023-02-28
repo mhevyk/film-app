@@ -22,6 +22,8 @@ Here is a working live demo: https://mhevyk.github.io/film-app-layout/
 
 It is a layout based on [Figma Template](https://www.figma.com/community/file/970595453636409922).
 
+This project uses [TMDB film api](https://developers.themoviedb.org/3/getting-started/introduction) to get different kinds of films.
+
 #### Key technologies
 
 - React
