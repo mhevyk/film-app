@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/film-app-layout/static/css/main.f0518b53.css",
-    "main.js": "/film-app-layout/static/js/main.c0203320.js",
+    "main.css": "/film-app-layout/static/css/main.69201263.css",
+    "main.js": "/film-app-layout/static/js/main.19dbf735.js",
     "static/media/placeholder.jpg": "/film-app-layout/static/media/placeholder.9e23b180b67847b284dc.jpg",
     "static/media/movie.svg": "/film-app-layout/static/media/movie.50e800f11128d3d89be6d5a144da3260.svg",
     "static/media/settings.svg": "/film-app-layout/static/media/settings.adcc714c45b35d745edb33aa12319d9e.svg",
@@ -14,11 +14,11 @@
     "static/media/star-stroke.svg": "/film-app-layout/static/media/star-stroke.c0c001c086f75e79617e5b6a408a8745.svg",
     "static/media/chevron-left.svg": "/film-app-layout/static/media/chevron-left.b39b27ec5e708666e5b7e5ea237ba825.svg",
     "static/media/chevron-right.svg": "/film-app-layout/static/media/chevron-right.690918b133d324d1ecc8a949c29ae68c.svg",
-    "main.f0518b53.css.map": "/film-app-layout/static/css/main.f0518b53.css.map",
-    "main.c0203320.js.map": "/film-app-layout/static/js/main.c0203320.js.map"
+    "main.69201263.css.map": "/film-app-layout/static/css/main.69201263.css.map",
+    "main.19dbf735.js.map": "/film-app-layout/static/js/main.19dbf735.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0518b53.css",
-    "static/js/main.c0203320.js"
+    "static/css/main.69201263.css",
+    "static/js/main.19dbf735.js"
   ]
 }
