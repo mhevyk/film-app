@@ -4,7 +4,8 @@ import { FILM_API_PAGE_MAX_LIMIT } from '../api';
 import { addPageQueryParam } from '../utils';
 
 export default function useNextSlides(initialUrl) {
-  const [data, setData] = useState([]);
+  const [slides, setSlides] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -15,14 +16,17 @@ export default function useNextSlides(initialUrl) {
 
   useEffect(() => {
     const url = addPageQueryParam(initialUrl, currentPage);
+    setLoading(true);
     axios
       .get(url)
-      .then((response) => setData([...data, ...response.data.results]))
-      .catch((error) => setError(error));
+      .then((response) => setSlides([...(slides || []), ...response.data.results]))
+      .catch((error) => setError(error))
+      .finally(() => setLoading(false));
   }, [currentPage, initialUrl]);
 
   return {
-    data,
+    slides,
+    loading,
     error,
     fetchNextSlides,
   };
