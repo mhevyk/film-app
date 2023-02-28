@@ -1,12 +1,13 @@
-import WithCaretAfter from '../WithCaret';
+import './Section.css';
+import WithChevronRight from '../WithChevronRight';
 
 function Section({ title, children, className }) {
   return (
     <section className={`section ${className}`}>
-      <WithCaretAfter>
+      <WithChevronRight>
         <h5 className="section__title">{title}</h5>
-      </WithCaretAfter>
-      {children}
+      </WithChevronRight>
+      <div className="section__content">{children}</div>
     </section>
   );
 }

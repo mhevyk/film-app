@@ -3,11 +3,9 @@ import FeatureTVShowSection from '../FeatureTVShowSection';
 
 function Main() {
   return (
-    <main className="main">
-      <div className="container">
-        <NewReleaseSection />
-        <FeatureTVShowSection />
-      </div>
+    <main className="main container">
+      <NewReleaseSection />
+      <FeatureTVShowSection />
     </main>
   );
 }

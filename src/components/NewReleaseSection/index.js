@@ -1,7 +1,10 @@
-import FilmSwiper from '../FilmSwiper';
 import Section from '../Section';
-import { slides } from './slides';
-import { useSlidesPerView } from '../../hooks/useSlidesPerView';
+import FilmSwiper from '../FilmSwiper';
+import useSlidesPerView from '../../hooks/useSlidesPerView';
+import useNextSlides from '../../hooks/useNextSlides';
+import { FILM_API_NEW_RELEASES_URL } from '../../api';
+import FetchError from '../FetchError';
+import Loader from '../Loader';
 
 function NewReleaseSection() {
   const slidesPerView = useSlidesPerView({
@@ -9,9 +12,21 @@ function NewReleaseSection() {
     lastSlideVisiblePercent: 35,
   });
 
+  const { slides, error, loading, fetchNextSlides } = useNextSlides(
+    FILM_API_NEW_RELEASES_URL
+  );
+
   return (
     <Section title="New Releases" className="section__new-releases">
-      <FilmSwiper slides={slides} slidesPerView={slidesPerView} />
+      {slides && (
+        <FilmSwiper
+          slides={slides}
+          slidesPerView={slidesPerView}
+          onReachEnd={fetchNextSlides}
+        />
+      )}
+      {error && <FetchError error={error} />}
+      {loading && <Loader />}
     </Section>
   );
 }

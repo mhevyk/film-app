@@ -1,41 +1,61 @@
 import './Film.css';
 import './HeaderFilm.css';
 import './NewReleaseFilm.css';
-import './FeatureTVShow.css';
 import Stars from '../Stars';
 import Button from '../Button';
-import Genre from '../Genre';
 import LazyDarkenedBackground from '../LazyDarkenedBackground';
-import WithCaret from '../WithCaret';
+import WithChevronRight from '../WithChevronRight';
+import { memo } from 'react';
+import {
+  FILM_API_IMAGE_FULL_HD_URL,
+  FILM_API_IMAGE_ORIGINAL_URL,
+} from '../../api';
+import { countInitialRating } from '../../utils';
+import Genres from '../Genres';
 
-function Film({ image, genre, name, description = null, watchButton = null }) {
+function Film(props) {
+  const {
+    poster_path,
+    vote_average,
+    backdrop_path = '',
+    overview = '',
+    isZoom,
+  } = props;
+
+  const name = props.name || props.title;
+  const genres = props.genre_ids || props.genres;
+  const rating = countInitialRating(vote_average);
+  const afterLoadedClassName = isZoom ? 'zoom-background' : 'background-cover';
+
+  const image = !isZoom
+    ? `${FILM_API_IMAGE_FULL_HD_URL}${backdrop_path}`
+    : `${FILM_API_IMAGE_ORIGINAL_URL}${poster_path}`;
+
   return (
     <LazyDarkenedBackground
       src={image}
       className="slide"
-      afterLoadedClassName={
-        watchButton ? 'background-cover' : 'zoom-background'
-      }
+      afterLoadedClassName={afterLoadedClassName}
     >
       <article className="film__card">
-        <Genre text={genre} className="card__item" />
-        <Stars count={5} className="card__item film__stars" />
+        <Genres genres={genres} />
+        <Stars initialRating={rating} className="card__item film__stars" />
         <h2 className="card__item film__name">{name}</h2>
-        {description && (
-          <p className="card__item film__description">{description}</p>
+        {!isZoom && overview && (
+          <p className="card__item film__description">{overview}</p>
         )}
-        {watchButton ? (
+        {!isZoom ? (
           <Button variant="gradient-bordered">Watch now</Button>
         ) : (
-          <WithCaret className="card__item film__watch-now">
+          <WithChevronRight className="card__item film__watch-now">
             <a href="#watch-now" className="section__title">
               Watch now
             </a>
-          </WithCaret>
+          </WithChevronRight>
         )}
       </article>
     </LazyDarkenedBackground>
   );
 }
 
-export default Film;
+export default memo(Film);

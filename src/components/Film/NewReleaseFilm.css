@@ -1,5 +1,4 @@
-.section__new-releases .film__card,
-.section__featured-tv-shows .film__card {
+.section .film__card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -8,12 +7,10 @@
     
 }
 
-.section__new-releases .film__card .card__item,
-.section__featured-tv-shows .film__card .card__item {
+.section .film__card .card__item {
     margin-bottom: 4.5%;
 }
 
-.section__new-releases .film__card .film__name,
-.section__featured-tv-shows .film__card .film__name {
+.section .film__card .film__name {
     font-weight: 500;
 }
