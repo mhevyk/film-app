@@ -1,4 +1,4 @@
-# Film App Layout
+# Film App
 
 ### Table of Contents
 
@@ -13,7 +13,7 @@
 Here is a working live demo: https://mhevyk.github.io/film-app/
 
 <p align="right">
-<a href='#quiz-game'>Back To The Top</a>
+<a href='#film-app'>Back To The Top</a>
 </p>
 
 ---
@@ -30,7 +30,7 @@ This project uses [TMDB film api](https://developers.themoviedb.org/3/getting-st
 - Swiper
 
 <p align="right">
-<a href='#quiz-game'>Back To The Top</a>
+<a href='#film-app'>Back To The Top</a>
 </p>
 
 ---
@@ -39,7 +39,7 @@ This project uses [TMDB film api](https://developers.themoviedb.org/3/getting-st
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mhevyk/film-app-layout.git .
+   git clone https://github.com/mhevyk/film-app.git .
    ```
 2. Install NPM packages
    ```sh
@@ -51,7 +51,7 @@ This project uses [TMDB film api](https://developers.themoviedb.org/3/getting-st
    ```
 
 <p align="right">
-<a href='#quiz-game'>Back To The Top</a>
+<a href='#film-app'>Back To The Top</a>
 </p>
 
 ---
