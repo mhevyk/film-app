@@ -15,6 +15,7 @@ import SwiperCore, {
   EffectFade,
   Autoplay,
 } from 'swiper';
+import { useCallback } from 'react';
 
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
@@ -24,9 +25,20 @@ function FilmSwiper({
   isPagination = false,
   isAutoplay = false,
   spaceBetween = 15,
+  onReachEnd = null,
+  isZoom = true,
   ...otherProps
 }) {
   const id = useId();
+
+  const reachEndHandler = useCallback(
+    (SwiperCore) => {
+      if (SwiperCore.progress > 0.9) {
+        onReachEnd?.();
+      }
+    },
+    [onReachEnd]
+  );
 
   return (
     <div data-id={id} className="swiper-container">
@@ -53,11 +65,12 @@ function FilmSwiper({
           }
         }
         className={slidesPerView > 1 ? 'blurred' : ''}
+        onReachEnd={reachEndHandler}
         {...otherProps}
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <Film {...slide} />
+            <Film {...slide} isZoom={isZoom} />
           </SwiperSlide>
         ))}
       </Swiper>
