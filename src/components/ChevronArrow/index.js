@@ -1,5 +1,4 @@
 import './ChevronArrow.css';
-
 import chevronLeftIcon from '../../assets/chevron-left.svg';
 import chevronRightIcon from '../../assets/chevron-right.svg';
 
@@ -21,7 +20,7 @@ function ChevronArrow({ direction, isActionIcon = true }) {
         isActionIcon ? 'action-icon' : ''
       }`}
     >
-      <img src={icon} alt={direction} />
+      <img src={icon} alt={`Chevron arrow ${direction}`} />
     </span>
   );
 }

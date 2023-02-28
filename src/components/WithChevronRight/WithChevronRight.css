@@ -1,0 +1,25 @@
+.with-chevron-container .chevron-arrow {
+    padding-left: 0.5em;
+}
+
+.section>.with-chevron-container {
+    margin: 24px 0;
+}
+
+.section .with-chevron-container>.section__title {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+@media (min-width: 850px) {
+    .section>.with-chevron-container>.section__title {
+        padding-left: calc(var(--sidebar-width) * 0.7);
+    }
+}
+
+.with-chevron-container {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    letter-spacing: 0.7px;
+}
