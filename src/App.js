@@ -2,15 +2,15 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import GenreContextProvider from './context/GenreContext';
+import GenreProvider from './context/GenreContext';
 
 function App() {
   return (
     <>
-      <GenreContextProvider>
+      <GenreProvider>
         <Header />
         <Main />
-      </GenreContextProvider>
+      </GenreProvider>
       <Footer />
     </>
   );
