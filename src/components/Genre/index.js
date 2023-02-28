@@ -1,7 +1,7 @@
-import styles from './Genre.module.css';
+import './Genre.css';
 
-function Genre({ text, className }) {
-  return <div className={`${className} ${styles.badge}`}>{text}</div>;
+function Genre({ genre, className }) {
+  return <div className={`genre ${className}`}>{genre}</div>;
 }
 
 export default Genre;
